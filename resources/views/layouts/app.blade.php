@@ -21,19 +21,12 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    @extends('layouts.plantilla')
-    @section('regis')
+    <div id="app">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
             <div class="container">
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/1200px-User_icon_2.svg.png" style="width: 40px">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                  @if (Route::has('register'))
-                                USUARIO SIN REGISTRAR
-                            
-                        @else
-
-                                    {{ Auth::user()->name }}
-                  @endif
+                  Andres R.
                     <!--{{ config('app.name', 'Laravel') }}-->
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -81,11 +74,10 @@
                 </div>
             </div>
         </nav>
-        @endsection
-
                 <main class="py-4">
             @yield('content')
         </main>
+    </dir>
     
 </body>
 </html>
