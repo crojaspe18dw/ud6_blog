@@ -42,9 +42,6 @@
     </div>
   </nav>
 -->
-<div id="app">
-@extends('layouts.app')
-</div>
 
       @yield('contenido')
 
