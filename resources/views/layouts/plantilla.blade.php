@@ -16,11 +16,13 @@
   <!-- Custom styles for this template -->
   <link href="css/blog-post.css" rel="stylesheet">
 
+
+
 </head>
 
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/1200px-User_icon_2.svg.png" style="width: 40px">
       <a class="navbar-brand" href="#">Andres R.</a>
@@ -31,14 +33,18 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
+              <span class="sr-only">(current)</span> 
+              
             </a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-
+-->
+<div id="app">
+@extends('layouts.app')
+</div>
 
       @yield('contenido')
 
